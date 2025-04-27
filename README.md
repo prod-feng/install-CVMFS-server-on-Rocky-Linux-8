@@ -17,6 +17,7 @@ cvmfs_server  transaction
 #Install software here, I just simply copy ones to the repo folder:
 cd /cvmfs/my.repo.name
 rsync -av /opt/ohpc/pub ./
+cd ~/
 
 ...
 cvmfs_server  publish 
