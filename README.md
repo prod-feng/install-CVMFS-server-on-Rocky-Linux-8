@@ -19,6 +19,8 @@ cd /cvmfs/my.repo.name
 rsync -av /opt/ohpc/pub ./
 cd ~/
 
+#set up a simple catalog
+touch /cvmfs/my.repo.name/pub/.cvmfscatalog
 ...
 cvmfs_server  publish 
 ```
@@ -43,6 +45,8 @@ overlay_my.repo.name on /cvmfs/my.repo.name type overlay (ro,nodev,relatime,secl
 ```
 
 3. On the same node, install CVMFS client and test mount
+
+Since we are on the same node, so do not need to take care of the security keys(/etc/cvmfs/keys) between server and clients.
 
 ```
 yum install cvmfs
