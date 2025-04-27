@@ -70,8 +70,7 @@ cvmfs_config  setup
 cvmfs_config  chksetup
 ```
 
-If everything goes fine, then we can manually to mount the publish repo on the same local node(so to avoid any config conflicts, since 
-both server and client will try to use /cvmfs folder, etc).
+If everything goes fine, then we can manually to mount the published repo on the same local node(so to avoid any config conflicts, since both server and client will try to use /cvmfs folder, etc).
 
 ```
 mount -t cvmfs my.repo.name /test/
